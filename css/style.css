@@ -52,6 +52,10 @@ ul{
     width: 50%;
 }
 
+.w-60{
+    width: 60%;
+}
+
 .w-80{
     width: 80%;
 }
@@ -272,7 +276,6 @@ footer .col .d-flex{
 
 .progress-bar{
     display: inline-block;
-    width: 60%;
 }
 
 .bar{
@@ -297,15 +300,11 @@ footer .col .d-flex{
 
 #player i{
     max-width: 20%;
-
-}
-
-#player i{
     vertical-align: middle;
 }
 
-.volume-buttons i{
-    padding: 0 2px;
+#volume{
+    justify-content: space-around;
 }
 
 /* Queries */
