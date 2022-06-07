@@ -172,10 +172,6 @@ ul{
     overflow-y: hidden;
 }
 
-.menu-list{
-    line-height: 30px;
-}
-
 .menu h4{
     padding: 10px 0;
 }
@@ -186,6 +182,7 @@ ul{
 
 #playlist{
     overflow-y: auto;
+    line-height: 30px;
 }
 
 .img-box-l img{
@@ -233,7 +230,8 @@ main .page{
 
 main .page-content{
     padding-top: 100px;
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .page-menu ul{
@@ -310,9 +308,6 @@ footer .col .d-flex{
 /* Queries */
 
 @media screen and (min-width:576px){
-    .album{
-        padding: 0 10px;
-    }
     .album li{
         width: 50%;
     }
