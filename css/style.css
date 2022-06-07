@@ -33,6 +33,29 @@ ul{
     display: flex;
 }
 
+.w-30{
+    width: 30%;
+}
+
+.w-33{
+    width: calc(100% / 3);
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-all{
+    width: 100%;
+}
 .btn {
     padding: 10px 20px;
     border-radius: 30px;
@@ -70,6 +93,14 @@ ul{
 
 .light-gray-bg{
     background-color: var(--light-gray);
+}
+
+.px-5{
+    padding: 0 5px;
+}
+
+.px-10{
+    padding: 0 10px;
 }
 
 /* Main */
@@ -129,23 +160,23 @@ ul{
     overflow-y: auto;
 }
 
-.img-box.l img{
+.img-box-l img{
     width: 40px;
 }
 
-.img-box.m img{
+.img-box-m img{
     width: 30px;
 }
 
-.user-area .img-box.s{
+.user-area .img-box-s{
     text-align: center;
 }
 
-.img-box.s img{
+.img-box-s img{
     width: 14px;
 }
 
-.user-area .img-box.m {
+.user-area .img-box-m {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -155,7 +186,7 @@ ul{
     vertical-align: middle;
 }
 
-.user-area .img-box.m img{
+.user-area .img-box-m img{
     object-fit: cover;
 }
 
@@ -184,6 +215,53 @@ main .page-content{
 footer .container {
     background-color: var(--gray);
     height: 100px;
+}
+
+footer .row{
+    height: 100%;
+}
+
+footer .col .d-flex{
+    height: 100%;
+    align-items: center;
+}
+
+.progress-bar{
+    display: inline-block;
+    width: 60%;
+}
+
+.bar{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--pale-gray);
+    border-radius: 30px;
+    vertical-align: middle;
+}
+
+.progress{
+    border: 2px solid var(--white);
+    width: 20%;
+    border-radius: 30px;
+    text-align: start;
+}
+
+#player{
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#player i{
+    max-width: 20%;
+
+}
+
+#player i{
+    vertical-align: middle;
+}
+
+.volume-buttons i{
+    padding: 0 2px;
 }
 
 /* Queries */
@@ -215,7 +293,15 @@ footer .container {
         border: 1px solid var(--gray);
     }
 
-    .user-area .img-box.s{
+    .user-area .img-box-s{
         text-align: start;
+    }
+
+    .col.tw-200{
+        width: 200px;
+    }
+
+    .col.tw-all{
+        flex-grow: 1;
     }
 }

@@ -24,19 +24,19 @@
             <nav class="sidebar">
                 <div class="sidebar-content d-flex">
                     <div class="menu logo-area">
-                        <div class="img-box l">
+                        <div class="img-box-l">
                             <img src="img/logo-small.svg" alt="Spotify Logo"><span><strong class="white tablet font-24">
                                     Spotify</strong></span>
                         </div>
                         <div class="menu-list">
                             <ul>
-                                <li class="img-box m">
+                                <li class="img-box-m">
                                     <img src="img/home.svg" alt="Home"><span class="white tablet">Home</span>
                                 </li>
-                                <li class="img-box m">
+                                <li class="img-box-m">
                                     <img src="img/search.svg" alt="Search"><span class="light-gray tablet">Cerca</span>
                                 </li>
-                                <li class="img-box m">
+                                <li class="img-box-m">
                                     <img src="img/libreria.svg" alt="Library"><span class="light-gray tablet">La tua
                                         libreria</span>
                                 </li>
@@ -60,12 +60,12 @@
                     
                     </div>
                     <div class="menu user-area menu-list">
-                        <div class="img-box s">
+                        <div class="img-box-s">
                             <img src="img/download.svg" alt="Download">
                             <span class="tablet light-gray font-14">Installa app</span>
                         </div>
                         <hr>
-                        <div class="img-box m">
+                        <div class="img-box-m">
                             <img src="img/profile.svg" alt="Profile">
                         </div>
                         <span class="tablet white font-14">John Doe</span>
@@ -82,7 +82,65 @@
         </div>
     </main>
     <footer>
-        <div class="container"></div>
+        <div class="container white">
+            <div class="row d-flex">
+                <div class="col w-30 tw-200">
+                        <div class="d-flex" id="current-track">
+                            <div class="img-box-l w-30">
+                                <img src="img/sinister.jpeg" alt="Sinister">
+                            </div>
+                            <div class="text w-50">
+                                <h6 class="font-14">Sinister</h6>
+                                <span class="font-14">Brano Nome</span>
+                            </div>
+                            <div class="">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-folder"></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="col w-40 tw-all">
+                    <div class="d-flex" id="player">
+                        <div class="w-all">
+                            <div class="player-buttons">
+                                <i class="fa-solid fa-shuffle px-10"></i>
+                                <i class="fa-solid fa-backward-step px-10"></i>
+                                <i class="fa-regular fa-circle-play fa-2x"></i>
+                                <i class="fa-solid fa-forward-step px-10"></i>
+                                <i class="fa-solid fa-arrow-rotate-right px-10"></i>
+                            </div>
+                        </div>
+                        <div class="w-all">
+                            <div class="track">
+                                <span class="font-14 px-5">0:25</span>
+                                <div class="progress-bar px-10 w-80">
+                                    <div class="bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="font-14 px-5">4:35</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-30 tw-200">
+                    <div class="d-flex" id="volume">
+                        <div class="w-50">
+                            <div class="volume-buttons">
+                                <i class="fa-solid fa-list"></i>
+                                <i class="fa-solid fa-desktop"></i>
+                                <i class="fa-solid fa-volume-high"></i>
+                            </div>
+                        </div>
+                            <div class="w-50 px-10 progress-bar">
+                                    <div class="bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
     </footer>
 </body>
 
