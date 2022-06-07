@@ -23,6 +23,9 @@ img{
     height: 100%;
 }
 
+a{
+    text-decoration: none;
+}
 ul{
     list-style-type: none;
 }
@@ -56,6 +59,13 @@ ul{
 .w-all{
     width: 100%;
 }
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+
+
 .btn {
     padding: 10px 20px;
     border-radius: 30px;
@@ -65,6 +75,10 @@ ul{
     display: none;
 }
 
+.font-12{
+    font-size: 12px;
+}
+
 .font-14{
     font-size: 14px;
 }
@@ -72,9 +86,20 @@ ul{
 .font-24{
     font-size: 24px;
 }
+
+.rounded {
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.rounded img{
+    object-fit: cover;
+}
 /* Color palette */
 
 :root{
+    --lime: #ADFF2F;
     --light-gray: #A3A3A3;
     --pale-gray: #414141;
     --gray: #282828;
@@ -122,7 +147,6 @@ ul{
 }
 
 .headbar a{
-    text-decoration: none;
     color: var(--white);
     border: 1px solid var(--white);
 }
@@ -179,10 +203,7 @@ ul{
 .user-area .img-box-m {
     height: 30px;
     width: 30px;
-    border-radius: 50%;
     background-color: var(--light-gray);
-    overflow: hidden;
-    display: inline-block;
     vertical-align: middle;
 }
 
@@ -201,13 +222,36 @@ ul{
 /* Main page */
 
 main .page{
+    width: calc(100vw - 50px);
     background-color: var(--dark-blue);
     overflow-y: scroll;
 }
 
 main .page-content{
     padding-top: 100px;
+
 }
+
+.page-menu ul{
+    flex-wrap: wrap;
+}
+
+#page-nav-buttons{
+    justify-content: center;
+}
+
+.page-menu li{
+    padding: 10px;
+}
+
+.page-menu li.active{
+    border-bottom: 3px solid var(--lime);
+}
+
+.album li{
+    text-align: center;
+}
+
 
 
 /* Footer */
@@ -266,6 +310,15 @@ footer .col .d-flex{
 
 /* Queries */
 
+@media screen and (min-width:576px){
+    .album{
+        padding: 0 10px;
+    }
+    .album li{
+        width: 50%;
+    }
+
+}
 @media screen and (min-width:768px){
     .tablet{
         display: inline-block;
@@ -279,7 +332,7 @@ footer .col .d-flex{
         padding: 0 20px;
     }
 
-    .logo-area, .user-area .img-box-m{
+    .logo-area .img-box-l{
         padding: 10px 0;
     }
 
@@ -287,6 +340,9 @@ footer .col .d-flex{
         width: calc(100vw - 200px);
     }
 
+    .album li{
+        width: 25%;
+    }
 
     .user-area hr{
         display: block;
@@ -303,5 +359,11 @@ footer .col .d-flex{
 
     .col.tw-all{
         flex-grow: 1;
+    }
+}
+
+@media screen and (min-width:992px){
+    .album li{
+        width: calc(100% / 6);
     }
 }
